@@ -2005,8 +2005,7 @@ agg <- mod %>%
         bstrap = TRUE, biters = 25000)
 
 # make labels for the estimate, std error, and confidence intervals
-label1 <- TeX(paste0(r'(Estimate ($e \in \{0, 5\}$) = )', 
-                     scales::number(agg$overall.att, 0.01)))
+label1 <-  paste0("Estimate~(e %in% '{0, 5}')~'='~'", scales::number(agg$overall.att, accuracy = 0.01), "'")
 
 label2 <- paste0("Std. Error = ", scales::number(agg$overall.se, 0.01), " \n",
                  "Conf. Int = [", scales::number(agg$overall.att - 1.96*agg$overall.se, 0.01), ", ", 
@@ -2026,7 +2025,7 @@ mod %>%
   geom_vline(xintercept = -1, linetype = "dashed") + 
   geom_hline(yintercept = 0, linetype = "dashed") + 
   scale_x_continuous(breaks = -5:5) + 
-  annotate("text", x = 3, y = 11, label = label1) + 
+  annotate("text", x = 3, y = 11, label = label1, parse = TRUE) + 
   annotate("text", x = 3, y = 9, label = label2) + 
   labs(x = "Event Time", y = "Treatment Effect \n Mortality Per 100,000") + 
   theme(axis.title.y = element_text(hjust = 0.5, vjust = 0.5, angle = 360),
@@ -2830,8 +2829,7 @@ agg <- mod_no_x %>%
         bstrap = TRUE, biters = 25000)
 
 # make labels for the estimate, std error, and confidence intervals
-label1 <- TeX(paste0(r'(Estimate ($e \in \{0, 5\}$) = )', 
-                     scales::number(agg$overall.att, 0.01)))
+label1 <-  paste0("Estimate~(e %in% '{0, 5}')~'='~'", scales::number(agg$overall.att, accuracy = 0.01), "'")
 
 label2 <- paste0("Std. Error = ", scales::number(agg$overall.se, 0.01), " \n",
                  "Conf. Int = [", scales::number(agg$overall.att - 1.96*agg$overall.se, 0.01), ", ", 
@@ -2852,7 +2850,7 @@ mod_no_x %>%
   geom_vline(xintercept = -1, linetype = "dashed") + 
   geom_hline(yintercept = 0, linetype = "dashed") + 
   scale_x_continuous(breaks = -5:5) + 
-  annotate("text", x = 3, y = 11, label = label1) + 
+  annotate("text", x = 3, y = 11, label = label1, parse = TRUE) + 
   annotate("text", x = 3, y = 9, label = label2) + 
   labs(x = "Event Time", y = "Treatment Effect \n Mortality Per 100,000") + 
   theme(axis.title.y = element_text(hjust = 0.5, vjust = 0.5, angle = 360),
@@ -3000,8 +2998,7 @@ agg <- mod_with_x %>%
         bstrap = TRUE, biters = 25000)
 
 # make labels for the estimate, std error, and confidence intervals
-label1 <- TeX(paste0(r'(Estimate ($e \in \{0, 5\}$) = )', 
-                     scales::number(agg$overall.att, 0.01)))
+label1 <-  paste0("Estimate~(e %in% '{0, 5}')~'='~'", scales::number(agg$overall.att, accuracy = 0.01), "'")
 
 label2 <- paste0("Std. Error = ", scales::number(agg$overall.se, 0.01), " \n",
                  "Conf. Int = [", scales::number(agg$overall.att - 1.96*agg$overall.se, 0.01), ", ", 
@@ -3022,7 +3019,7 @@ mod_with_x %>%
   geom_vline(xintercept = -1, linetype = "dashed") + 
   geom_hline(yintercept = 0, linetype = "dashed") + 
   scale_x_continuous(breaks = -5:5) + 
-  annotate("text", x = 3, y = 18, label = label1) + 
+  annotate("text", x = 3, y = 18, label = label1, parse = TRUE) + 
   annotate("text", x = 3, y = 15, label = label2) + 
   labs(x = "Event Time", y = "Treatment Effect \n Mortality Per 100,000") + 
   theme(axis.title.y = element_text(hjust = 0.5, vjust = 0.5, angle = 360),
